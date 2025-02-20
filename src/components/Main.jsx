@@ -82,7 +82,7 @@ const Main = () => {
             className={"p-0 text-black font-bold text-5xl"}
           />
 
-          <p className="text-xl font-medium text-muted-foreground text-pretty leading-7">
+          <p className="md:text-xl font-medium text-muted-foreground text-pretty leading-7">
             Your Smart Hiking Companion for Hamiguitan Trails
           </p>
           <div>
