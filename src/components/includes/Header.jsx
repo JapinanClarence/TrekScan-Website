@@ -17,19 +17,26 @@ const Header = () => {
 
   return (
     <header
-      className={`  h-[60px] w-full top-0 left-0 fixed z-50 transition-all duration-300 px-5 lg:px-72 ${
+      className={`  h-[60px] w-full top-0 left-0 fixed z-50 transition-all duration-300 md:px-5 lg:px-72 ${
         // isScrolled ? "bg-zinc/30 backdrop-blur-md shadow-md" : "bg-transparent"
-         isScrolled ? "bg-white shadow-md" : "bg-transparent"
+        isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="h-full flex items-center gap-2">
-        <Button variant="link" className="md:h-full md:w-60"
-         onClick={() => {
-          document.getElementById("home").scrollIntoView({
-            behavior: "smooth",
-          });
-        }}>
-          <img  className="h-24 w-60 md:w-full object-contain" src={logo} alt="Logo" />
+        <Button
+          variant="link"
+          className="md:h-full md:w-60"
+          onClick={() => {
+            document.getElementById("home").scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
+        >
+          <img
+            className="h-24 w-60 md:w-full object-contain"
+            src={logo}
+            alt="Logo"
+          />
         </Button>
         <div className="h-full hidden md:inline">
           <Button
