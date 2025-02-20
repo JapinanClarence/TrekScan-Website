@@ -111,7 +111,7 @@ const Main = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-center  mb-5 lg:mb-10">
             Overview
           </h1>
-          <p className="text-muted-foreground ">
+          <p className="text-sm md:text-base text-muted-foreground ">
             Hamiguitan TrekScan MVP is a streamlined version of our hiking
             companion app, focused on delivering essential features that enhance
             the outdoor experience without the complexity of a full-scale
