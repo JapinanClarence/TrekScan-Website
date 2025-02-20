@@ -4,7 +4,6 @@ import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { CloudAlert, DatabaseBackup, ScanQrCode } from "lucide-react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Button } from "./ui/button";
-import vortexBg from "@/assets/rainbow-vortex.svg";
 import { FlipWords } from "./ui/flip-words";
 
 const content = [
