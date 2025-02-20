@@ -1,0 +1,69 @@
+const content = [
+  {
+    title: "Basic QR Code Scanning",
+    description: (
+      <>
+        <p>
+          Hamiguitan MVP enables users to scan QR codes placed at key locations
+          along hiking trails.
+        </p>
+        <div className="underline mt-5 font-semibold">Functionality:</div>
+        <p>
+          Users can use their mobile device to scan QR codes and immediately
+          access information specific to their current location. The app
+          supports basic text and image content associated with each QR code.
+        </p>
+      </>
+    ),
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        Basic QR Code Scanning
+      </div>
+    ),
+  },
+  {
+    title: "Centralised Database",
+    description: (
+      <>
+        <p>
+          The app includes a simple, cloud-based database that stores
+          information related to each QR code.
+        </p>
+        <div className="underline mt-5 font-semibold">Functionality:</div>
+        <p>
+          Information in the database is tied directly to specific QR codes,
+          ensuring users receive relevant content based on the code they scan.
+          The database is maintained to include basic details such as historical
+          facts and local points of interest.
+        </p>
+      </>
+    ),
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        Centralised Database
+      </div>
+    ),
+  },
+  {
+    title: "Offline Access (Limited)",
+    description: (
+      <>
+        <p>
+          Hamiguitan MVP offers the ability to download basic trail information
+          in advance.
+        </p>
+        <div className="underline mt-5 font-semibold">Functionality:</div>
+        <p>
+          Users can pre-download the information associated with the QR codes on
+          a specific trail. Offline access is limited to text and image content
+          only.
+        </p>
+      </>
+    ),
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+        Offline Access
+      </div>
+    ),
+  },
+];
