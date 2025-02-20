@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "@/assets/Logo3.png";
 import { Button } from "../ui/button";
+import { ArrowBigRight, ArrowDownRight } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,6 +51,7 @@ const Header = () => {
             }}
           >
             Features
+            <ArrowDownRight/>
           </Button>
           <Button
             size="lg"
@@ -62,6 +64,7 @@ const Header = () => {
             }}
           >
             About
+            <ArrowDownRight/>
           </Button>
         </div>
       </div>

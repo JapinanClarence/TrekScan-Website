@@ -71,15 +71,21 @@ const Main = () => {
         <img
           src={heroBanner}
           alt=""
-          className="hidden md:inline h-52 md:h-96"
+          className="hidden md:inline h-52 md:h-64 lg:h-96"
         />
         <div className="w-full md:w-1/2 flex flex-col gap-5">
-          <h1 className="relative z-10 text-6xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-orange-300 via-orange-500 to-accentOrange  text-start font-sans font-bold">
-            TrekScan
-          </h1>
+          <div>
+            <span className="text-5xl md:text-7xl  text-start font-sans font-bold text-deepBlue">
+              Trek
+            </span>
+            <span className="text-5xl md:text-7xl font-sans font-bold text-accentOrange">
+              Scan
+            </span>
+          </div>
+
           <FlipWords
             words={words}
-            className={"p-0 text-black font-bold text-5xl"}
+            className={"p-0 text-black font-bold text-3xl md:text-5xl"}
           />
 
           <p className="md:text-xl font-medium text-muted-foreground text-pretty leading-7">
@@ -90,7 +96,7 @@ const Main = () => {
               size="lg"
               className="bg-accentOrange hover:bg-orange-500"
               onClick={() => {
-                document.getElementById("features").scrollIntoView({
+                document.getElementById("content").scrollIntoView({
                   behavior: "smooth",
                 });
               }}
@@ -100,24 +106,30 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div id="overview" className="p-10 py-24 lg:px-96 lg:py-24 text-center">
-        <h1 className="text-3xl md:text-5xl font-bold text-center  mb-5 lg:mb-10">
-          Overview
-        </h1>
-        <p className="text-muted-foreground ">
-          Hamiguitan TrekScan MVP is a streamlined version of our hiking
-          companion app, focused on delivering essential features that enhance
-          the outdoor experience without the complexity of a full-scale product.
-          The MVP allows hikers to access location-based information by scanning
-          QR codes placed along trails, making it easy to learn more about the
-          environment directly from their mobile devices.
-        </p>
-      </div>
-      <div id="features" className="py-10 lg:px-72 lg:py-24 bg-deepBlue">
-        <h1 className="text-3xl md:text-5xl font-bold text-center text-white mb:5 lg:mb-10">
-          Core Features
-        </h1>
-        <StickyScroll content={content} />
+      {/* additional content */}
+      <div  className="flex flex-col gap-20 mx-auto">
+        <div id="content" className="md:w-1/2 p-10 text-center mx-auto">
+          <h1 className="text-3xl md:text-5xl font-bold text-center  mb-5 lg:mb-10">
+            Overview
+          </h1>
+          <p className="text-muted-foreground ">
+            Hamiguitan TrekScan MVP is a streamlined version of our hiking
+            companion app, focused on delivering essential features that enhance
+            the outdoor experience without the complexity of a full-scale
+            product. The MVP allows hikers to access location-based information
+            by scanning QR codes placed along trails, making it easy to learn
+            more about the environment directly from their mobile devices.
+          </p>
+        </div>
+        <div
+          id="features"
+          className="h-1/2 flex flex-col items-center justify-center py-10 lg:py-24"
+        >
+          <h1 className="text-3xl md:text-5xl font-bold text-center mb:5 lg:mb-10">
+            Core Features
+          </h1>
+          <StickyScroll content={content}  />
+        </div>
       </div>
     </main>
   );
