@@ -107,11 +107,11 @@ const Main = () => {
       </div>
       {/* additional content */}
       <div  className="flex flex-col gap-20 mx-auto">
-        <div id="content" className="md:w-1/2 p-10 text-center mx-auto">
+        <div id="content" className="md:w-1/2 p-10 mx-auto">
           <h1 className="text-3xl md:text-5xl font-bold text-center  mb-5 lg:mb-10">
             Overview
           </h1>
-          <p className="text-sm md:text-base text-muted-foreground ">
+          <p className=" text-muted-foreground  text-wrap md:text-center">
             Hamiguitan TrekScan MVP is a streamlined version of our hiking
             companion app, focused on delivering essential features that enhance
             the outdoor experience without the complexity of a full-scale

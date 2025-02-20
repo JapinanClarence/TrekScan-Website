@@ -33,6 +33,7 @@ module.exports = {
   		},
   		colors: {
 			deepBlue: "#003f5a",
+			lighterBlue: "#035c82",
 			accentOrange: "#e2663e",
 			defaultGray: "#e5e5e5",
   			background: 'hsl(var(--background))',
