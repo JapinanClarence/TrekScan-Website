@@ -75,19 +75,18 @@ const Main = () => {
           alt=""
           className="hidden md:inline h-52 md:h-64 lg:h-96"
         />
-        <div className="w-full md:w-1/2 flex flex-col gap-5">
-          <div>
-            <span className="text-5xl md:text-7xl  text-start font-sans font-bold text-deepBlue">
+        <div className="w-full md:w-1/2 flex flex-col justify-end gap-5">
+          <div className="text-5xl md:text-8xl">
+            <span className="  text-start font-sans font-bold text-deepBlue">
               Trek
             </span>
-            <span className="text-5xl md:text-7xl font-sans font-bold text-accentOrange">
+            <span className=" font-sans font-bold text-accentOrange">
               Scan
             </span>
           </div>
-
           <FlipWords
             words={words}
-            className={"p-0 text-black font-bold text-3xl md:text-5xl"}
+            className={"p-0 text-black font-bold text-5xl md:text-5xl"}
           />
 
           <p className="md:text-xl font-medium text-muted-foreground text-pretty leading-7">
@@ -98,12 +97,12 @@ const Main = () => {
               size="lg"
               className="bg-accentOrange hover:bg-orange-500"
               onClick={() => {
-                document.getElementById("content").scrollIntoView({
+                document.getElementById("get-started").scrollIntoView({
                   behavior: "smooth",
                 });
               }}
             >
-              Learn More
+              Get Started
             </Button>
           </div>
         </div>
@@ -133,12 +132,20 @@ const Main = () => {
           <StickyScroll content={content} />
         </div>
       </div>
-      <div className="bg-defaultGray flex flex-col gap-14 justify-center items-center px-5 py-14 lg:py-24">
-        <div>
-          <h2 className="text-center text-3xl md:text-4xl font-bold text-zinc-800">Download TreckScan App⚡️</h2>
+      <div id="get-started" className="bg-defaultGray flex flex-col gap-14 justify-between px-5 py-14 lg:px-72 lg:py-24">
+        <div className="md:w-2/3 space-y-5">
+          <h2 className="text-4xl md:text-8xl font-bold text-zinc-800">
+            Get Started with TrekScan
+          </h2>
+          <p className="md:text-lg text-muted-foreground">
+            Get the TrekScan app and transform your hiking experience with
+            instant access to trail insights, local stories, and key landmarks.
+            Plan ahead by downloading essential trail information and explore
+            with confidence—even without a signal
+          </p>
         </div>
-        <div className="flex gap-5 flex-col md:items-start md:justify-start lg:flex-row">
-          <DownloadButton icon={playstore} content={"Google Play"} />
+        <div className="flex-1 flex gap-5 flex-col items-center md:items-start md:justify-start lg:flex-row">
+          <DownloadButton  icon={playstore} content={"Google Play"} />
           <DownloadButton icon={apple} content={"App Store"} />
         </div>
       </div>
