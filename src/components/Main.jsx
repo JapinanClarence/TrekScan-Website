@@ -5,6 +5,9 @@ import { CloudAlert, DatabaseBackup, ScanQrCode } from "lucide-react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Button } from "./ui/button";
 import { FlipWords } from "./ui/flip-words";
+import DownloadButton from "./ui/download-button";
+import apple from "@/assets/apple.png";
+import playstore from "@/assets/playstore.png";
 
 const content = [
   {
@@ -65,7 +68,7 @@ const Main = () => {
       {/* hero content */}
       <div
         id="home"
-        className="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between  px-10 lg:px-72 py-12 md:py-0 min-h-screen "
+        className="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between  px-5 lg:px-72 py-10 md:py-0 min-h-screen "
       >
         <img
           src={heroBanner}
@@ -106,8 +109,8 @@ const Main = () => {
         </div>
       </div>
       {/* additional content */}
-      <div  className="flex flex-col gap-20 mx-auto">
-        <div id="content" className="md:w-1/2 p-10 mx-auto">
+      <div className="flex flex-col gap-20 mx-auto">
+        <div id="content" className="md:w-1/2 px-5 py-10 mx-auto">
           <h1 className="text-3xl md:text-5xl font-bold text-center  mb-5 lg:mb-10">
             Overview
           </h1>
@@ -127,7 +130,16 @@ const Main = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-center mb:5 lg:mb-10">
             Core Features
           </h1>
-          <StickyScroll content={content}  />
+          <StickyScroll content={content} />
+        </div>
+      </div>
+      <div className="bg-defaultGray flex flex-col gap-14 justify-center items-center px-5 py-14 lg:py-24">
+        <div>
+          <h2 className="text-center text-3xl md:text-4xl font-bold text-zinc-800">Download TreckScan App⚡️</h2>
+        </div>
+        <div className="flex gap-5 flex-col md:items-start md:justify-start lg:flex-row">
+          <DownloadButton icon={playstore} content={"Google Play"} />
+          <DownloadButton icon={apple} content={"App Store"} />
         </div>
       </div>
     </main>

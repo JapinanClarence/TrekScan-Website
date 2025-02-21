@@ -34,7 +34,7 @@ const Header = () => {
           }}
         >
           <img
-            className="h-24 w-60 md:w-full object-contain"
+            className="h-24 w-52 md:w-full object-contain"
             src={logo}
             alt="Logo"
           />
